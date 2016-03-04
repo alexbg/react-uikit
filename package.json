@@ -1,12 +1,11 @@
 {
   "name": "reactuikit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use react with the css framework uikit",
   "main": "index.js",
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/alexbg/react-uikit.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexbg/react-uikit.git"
   },
   "scripts": {
     "start": "gulp"
