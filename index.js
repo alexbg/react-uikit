@@ -5,5 +5,6 @@ module.exports = {
   icon: require('./dist/core/common/uiIcon'),
   badge: require('./dist/core/common/uiBadge'),
   close: require('./dist/core/common/uiClose'),
-  alert: require('./dist/core/common/uiAlert')
+  alert: require('./dist/core/common/uiAlert'),
+  thumbnail: require('./dist/core/common/uiThumbnail')
 }
