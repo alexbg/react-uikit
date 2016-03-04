@@ -6,7 +6,7 @@ var uiButton = React.createClass({
     size: React.PropTypes.string,
     toggle: React.PropTypes.bool,
     className: React.PropTypes.string,
-    text: React.PropTypes.string.isRequired,
+    //text: React.PropTypes.string.isRequired,
     disabled: React.PropTypes.bool,
     full: React.PropTypes.bool,
     margin: React.PropTypes.bool,
@@ -17,7 +17,7 @@ var uiButton = React.createClass({
       color: 'primary',
       size: 'large',
       toggle: false,
-      text: 'button',
+      //text: 'button',
       disabled: false,
       full: false,
       margin: true,
@@ -36,11 +36,11 @@ var uiButton = React.createClass({
 
     // color of button (primary,danger,success,link)
     if(color){
-      filledClassName.push('uk-button-'+props.color);
+      filledClassName.push('uk-button-'+color);
     }
 
     if(size){
-      filledClassName.push('uk-button-'+props.size);
+      filledClassName.push('uk-button-'+size);
     }
 
     if(full){
@@ -68,7 +68,7 @@ var uiButton = React.createClass({
     if(link){
       button = <a className={filledClassName} {...options}>{props.text}</a>
     }else{
-      button = <button className={filledClassName} {...options}>{props.text}</button>
+      button = <button className={filledClassName} {...options}>{props.children}</button>
     }
     return button;
   }

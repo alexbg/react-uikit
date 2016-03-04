@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "Use react with the css framework uikit",
   "main": "index.js",
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/alexbg/react-uikit.git"
+  },
   "scripts": {
     "start": "gulp"
   },
