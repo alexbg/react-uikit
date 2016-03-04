@@ -1,0 +1,9 @@
+src/
+.gitignore
+.npmignore
+gulpfile.js
+.babelrc
+bundle/
+__test__/
+index.html
+bundle-test.js
