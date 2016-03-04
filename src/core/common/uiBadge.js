@@ -1,6 +1,6 @@
 var React = require('react');
 
-var uiButton = React.createClass({
+var uiBadge = React.createClass({
   propTypes: {
     color: React.PropTypes.string,
     notification: React.PropTypes.bool,
@@ -44,4 +44,4 @@ var uiButton = React.createClass({
   }
 });
 
-module.exports = uiButton;
+module.exports = uiBadge;

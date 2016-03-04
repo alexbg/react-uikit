@@ -1,13 +1,15 @@
 var React = require('react');
 
-var uiButton = React.createClass({
+var uiClose = React.createClass({
   propTypes: {
     alt: React.PropTypes.bool,
+    alert: React.PropTypes.bool,
     tag: React.PropTypes.string
   },
   getDefaultProps: function(){
     return {
       alt: false,
+      alert: false,
       tag: 'a'
     }
   },
@@ -16,14 +18,17 @@ var uiButton = React.createClass({
 
     var filledClassName = [];
 
-    var {alt,tag,className, ...options} = props;
+    var {alt,alert,tag,className, ...options} = props;
 
     console.log(props);
     filledClassName.push('uk-close');
 
-    // color of button (primary,danger,success,link)
     if(alt){
       filledClassName.push('uk-close-alt');
+    }
+
+    if(alert){
+      filledClassName.push('uk-alert-close');
     }
 
     if(className){
@@ -38,4 +43,4 @@ var uiButton = React.createClass({
   }
 });
 
-module.exports = uiButton;
+module.exports = uiClose;
