@@ -6,6 +6,8 @@ With react-uikit you can use the css framework uikit with react.
 
 - button
 - icon
+- badge
+- close
 
 ## How to install?
 
@@ -26,4 +28,3 @@ var ReactDOM = require('react-dom');
 
 ReactDOM.render(React.createElement(reactuikit.button,null),document.getElementById('test'));
 ```
-

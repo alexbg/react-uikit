@@ -44,6 +44,10 @@ var uiIcon = React.createClass({
       filledClassName.push('uk-icon-justify');
     }
 
+    if(className){
+      filledClassName.push(className);
+    }
+
     filledClassName = filledClassName.join(' ');
 
     // if is a <button> or <a> tag

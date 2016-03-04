@@ -10,7 +10,7 @@ var uiButton = React.createClass({
     disabled: React.PropTypes.bool,
     full: React.PropTypes.bool,
     margin: React.PropTypes.bool,
-    link: React.PropTypes.bool
+    //link: React.PropTypes.bool
   },
   getDefaultProps: function(){
     return {
@@ -21,7 +21,7 @@ var uiButton = React.createClass({
       disabled: false,
       full: false,
       margin: true,
-      link: false
+      //link: false
     }
   },
   render: function(){
@@ -29,7 +29,7 @@ var uiButton = React.createClass({
 
     var filledClassName = [];
 
-    var {color,size,full,toggle,className,margin,link, ...options} = props;
+    var {color,size,full,toggle,className,margin, ...options} = props;
 
     console.log(props);
     filledClassName.push('uk-button');
@@ -48,7 +48,7 @@ var uiButton = React.createClass({
     }
 
     if(className){
-      filledClassName.push(props.className);
+      filledClassName.push(className);
     }
 
     filledClassName = filledClassName.join(' ');
@@ -65,8 +65,8 @@ var uiButton = React.createClass({
 
     // if is a <button> or <a> tag
     var button;
-    if(link){
-      button = <a className={filledClassName} {...options}>{props.text}</a>
+    if(props.href){
+      button = <a className={filledClassName} {...options}>{props.children}</a>
     }else{
       button = <button className={filledClassName} {...options}>{props.children}</button>
     }

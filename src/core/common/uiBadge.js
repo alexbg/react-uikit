@@ -33,7 +33,7 @@ var uiButton = React.createClass({
     }
 
     if(className){
-      filledClassName.push(props.className);
+      filledClassName.push(className);
     }
 
     filledClassName = filledClassName.join(' ');
