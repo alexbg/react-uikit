@@ -1,6 +1,6 @@
 var React = require('react');
 
-var uiButton = React.createClass({
+var uiList = React.createClass({
   propTypes: {
     modifier: React.PropTypes.oneOf(['line','striped','space'])
   },
@@ -32,4 +32,4 @@ var uiButton = React.createClass({
   }
 });
 
-module.exports = uiButton;
+module.exports = uiList;
