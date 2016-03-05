@@ -2,15 +2,14 @@ var ReactDOM = require('react-dom');
 var React = require('react');
 var test = require('reactuikit');
 
+
 ReactDOM.render(
-  <test.overlay
-    hover
+  <test.text
     //href='http://www.google.es'
-    src='http://getuikit.com/docs/images/placeholder_600x400.svg'
-    background
-    icon
+    //src='http://getuikit.com/docs/images/placeholder_600x400.svg'
     //image='http://getuikit.com/docs/images/placeholder_600x400_2.svg'
-    flex='uk-flex-center uk-flex-middle'
+    align='center'
+    wrap='truncate'
     >
-    Este es el texto
-  </test.overlay>,document.getElementById('test'));
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elit
+  </test.text>,document.getElementById('test'));

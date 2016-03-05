@@ -7,5 +7,6 @@ module.exports = {
   close: require('./dist/core/common/uiClose'),
   alert: require('./dist/core/common/uiAlert'),
   thumbnail: require('./dist/core/common/uiThumbnail'),
-  overlay: require('./dist/core/common/uiOverlay')
+  overlay: require('./dist/core/common/uiOverlay'),
+  text: require('./dist/core/common/uiText')
 }
