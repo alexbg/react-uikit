@@ -9,5 +9,6 @@ module.exports = {
   thumbnail: require('./dist/core/common/uiThumbnail'),
   overlay: require('./dist/core/common/uiOverlay'),
   text: require('./dist/core/common/uiText'),
-  column: require('./dist/core/common/uiColumn')
+  column: require('./dist/core/common/uiColumn'),
+  animation: require('./dist/core/common/uiAnimation')
 }

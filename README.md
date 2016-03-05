@@ -4,10 +4,18 @@ With react-uikit you can use the css framework uikit with react.
 
 ## What can you do?
 
-- button
-- icon
-- badge
-- close
+### common
+
+- [button](http://getuikit.com/docs/button.html)
+- [icon](http://getuikit.com/docs/icon.html)
+- [badge](http://getuikit.com/docs/badge.html)
+- [close](http://getuikit.com/docs/close.html)
+- [column](http://getuikit.com/docs/column.html)
+- [overlay](http://getuikit.com/docs/overlay.html)
+- [text](http://getuikit.com/docs/text.html)
+- [thumbnail](http://getuikit.com/docs/thumbnail.html)
+- [animation](http://getuikit.com/docs/animation.html)
+- [alert](http://getuikit.com/docs/alert.html)
 
 ## How to install?
 
