@@ -52,7 +52,7 @@ var uiText = React.createClass({
       TextTag = tag;
     }
 
-    return <TextTag className={filledClassName}>{props.children}</TextTag>;
+    return <TextTag className={filledClassName} {...options}>{props.children}</TextTag>;
   }
 });
 

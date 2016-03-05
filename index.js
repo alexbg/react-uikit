@@ -8,5 +8,6 @@ module.exports = {
   alert: require('./dist/core/common/uiAlert'),
   thumbnail: require('./dist/core/common/uiThumbnail'),
   overlay: require('./dist/core/common/uiOverlay'),
-  text: require('./dist/core/common/uiText')
+  text: require('./dist/core/common/uiText'),
+  column: require('./dist/core/common/uiColumn')
 }
