@@ -14,5 +14,6 @@ module.exports = {
   animation: require('./dist/core/common/uiAnimation'),
   // elements
   list: require('./dist/core/elements/uiList'),
-  descriptionList: require('./dist/core/elements/uiDescriptionList')
+  descriptionList: require('./dist/core/elements/uiDescriptionList'),
+  table: require('./dist/core/elements/table/indexTable')
 }
