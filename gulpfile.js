@@ -14,15 +14,34 @@ if (!fs.existsSync('bundle')){
     fs.mkdirSync('bundle');
 }
 
-gulp.task('default',['copy','watch','browserify']);
+gulp.task('default',['browserify','watch']);
+
+/*var transform = function(){
+  browserify({ debug: true })
+  .transform(babelify)
+  .require("./bundle-test.js", { entry: true })
+  .bundle()
+  .on("error", function (err) { console.log("Error: " + err.message); })
+  .pipe(fs.createWriteStream("./bundle/bundle.js"));
+}*/
 
 gulp.task('copy',function(){
-  gulp.src('src/**/*.js')
+  var stream = gulp.src('src/**/*.js')
   .pipe(babel())
   .pipe(gulp.dest('dist'));
+  return stream;
 });
 
-gulp.task('browserify',function(){
+gulp.task('browserify',['copy'],function(){
+  browserify({ debug: true })
+  .transform(babelify)
+  .require("./bundle-test.js", { entry: true })
+  .bundle()
+  .on("error", function (err) { console.log("Error: " + err.message); })
+  .pipe(fs.createWriteStream("./bundle/bundle.js"));
+});
+
+gulp.task('browserify-watch',function(){
   browserify({ debug: true })
   .transform(babelify)
   .require("./bundle-test.js", { entry: true })
@@ -32,7 +51,7 @@ gulp.task('browserify',function(){
 });
 
 gulp.task('watch',function(){
-  gulp.watch('src/**/*.js',['copy','browserify']);
-  gulp.watch('bundle-test.js',['browserify']);
-  gulp.watch('index.js',['browserify']);
+  gulp.watch('src/**/*.js',['browserify']);
+  gulp.watch('bundle-test.js',['browserify-watch']);
+  gulp.watch('index.js',['browserify-watch']);
 });

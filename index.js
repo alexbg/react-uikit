@@ -12,8 +12,9 @@ module.exports = {
   text: require('./dist/core/common/uiText'),
   column: require('./dist/core/common/uiColumn'),
   animation: require('./dist/core/common/uiAnimation'),
-  // elements
+  // Elements
   list: require('./dist/core/elements/uiList'),
   descriptionList: require('./dist/core/elements/uiDescriptionList'),
-  table: require('./dist/core/elements/table/indexTable')
+  table: require('./dist/core/elements/table/indexTable'),
+  form: require('./dist/core/elements/form/indexForm')
 }

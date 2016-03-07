@@ -17,6 +17,12 @@ With react-uikit you can use the css framework uikit with react.
 - [animation](http://getuikit.com/docs/animation.html)
 - [alert](http://getuikit.com/docs/alert.html)
 
+### elements
+
+- [table](http://getuikit.com/docs/table.html)
+- [description list](http://getuikit.com/docs/description-list.html)
+- [list](http://getuikit.com/docs/list.html)
+
 ## How to install?
 
 `npm install reactuikit`

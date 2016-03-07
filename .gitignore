@@ -2,3 +2,4 @@ node_modules/
 dist/
 bundle/
 npm-debug.log
+bundle-test.js
