@@ -4,13 +4,14 @@ var Close = require('./uiClose');
 var uiAlert = React.createClass({
   propTypes: {
     color: React.PropTypes.string,
-    size: React.PropTypes.string,
+    large: React.PropTypes.bool,
     close: React.PropTypes.bool
   },
   getDefaultProps: function(){
     return {
       color: 'primary',
-      close: true
+      close: true,
+      large: false
     }
   },
   render: function(){
@@ -18,9 +19,9 @@ var uiAlert = React.createClass({
 
     var filledClassName = [];
 
-    var {color,size,close,className, ...options} = props;
+    var {color,large,close,className, ...options} = props;
 
-    console.log(props);
+    
     filledClassName.push('uk-alert');
 
     // color of button (primary,danger,success,link)
@@ -28,8 +29,8 @@ var uiAlert = React.createClass({
       filledClassName.push('uk-alert-'+color);
     }
 
-    if(size){
-      filledClassName.push('uk-alert-'+size);
+    if(large){
+      filledClassName.push('uk-alert-large');
     }
 
     if(className){

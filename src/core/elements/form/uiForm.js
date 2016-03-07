@@ -56,7 +56,7 @@ var uiForm = React.createClass({
     }else{
       finalChildrens = props.children;
     }
-    console.log(finalChildrens);
+    
 
     return (
       <form className={filledClassName} {...options}>

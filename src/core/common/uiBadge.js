@@ -8,7 +8,6 @@ var uiBadge = React.createClass({
   },
   getDefaultProps: function(){
     return {
-      color: 'primary',
       notification: false,
       tag: 'div'
     }
@@ -20,7 +19,7 @@ var uiBadge = React.createClass({
 
     var {color,notification,tag,className, ...options} = props;
 
-    console.log(props);
+    
     filledClassName.push('uk-badge');
 
     // color of button (primary,danger,success,link)

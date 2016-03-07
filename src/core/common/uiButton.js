@@ -31,7 +31,7 @@ var uiButton = React.createClass({
 
     var {color,size,full,toggle,className,margin, ...options} = props;
 
-    console.log(props);
+    
     filledClassName.push('uk-button');
 
     // color of button (primary,danger,success,link)

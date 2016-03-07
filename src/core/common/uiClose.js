@@ -20,7 +20,7 @@ var uiClose = React.createClass({
 
     var {alt,alert,tag,className, ...options} = props;
 
-    console.log(props);
+    
     filledClassName.push('uk-close');
 
     if(alt){

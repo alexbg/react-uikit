@@ -77,7 +77,7 @@ var uiFormInput = React.createClass({
 
     controlClassName = controlClassName.join(' ');
 
-    console.log(props);
+    
     var input;
     var inputElement = <input className={filledClassName} {...options} type={type}></input>
     if(row || control){

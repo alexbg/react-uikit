@@ -21,7 +21,6 @@ var uiThumbnail = React.createClass({
 
     var {size,tag,caption,className,src,alt, ...options} = props;
 
-    console.log(props);
     filledClassName.push('uk-thumbnail');
 
     if(size){

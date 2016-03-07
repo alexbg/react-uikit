@@ -69,7 +69,7 @@ var uiPanel = React.createClass({
 
     filledClassName = filledClassName.join(' ');
 
-    console.log(badge);
+    
     return (
       <Tag className={filledClassName} {...options}>
         {teaser ? <img src={teaser}></img> : null}

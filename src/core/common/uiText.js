@@ -20,8 +20,6 @@ var uiText = React.createClass({
 
     var {className,styles,size,align,wrap,tag, ...options} = props;
 
-    console.log(props);
-    //filledClassName.push('uk-button');
 
     if(styles){
       styles.map(function(value,index){

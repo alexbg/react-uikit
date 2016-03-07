@@ -23,7 +23,7 @@ var uiIcon = React.createClass({
 
     var {icon,size,spin,hover,className,justify, ...options} = props;
 
-    console.log(props);
+    
     filledClassName.push('uk-icon-'+icon);
 
     // color of button (primary,danger,success,link)
