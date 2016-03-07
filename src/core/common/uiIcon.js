@@ -11,7 +11,6 @@ var uiIcon = React.createClass({
   getDefaultProps: function(){
     return {
       icon: 'github',
-      size: 'large',
       spin: false,
       hover: false,
       justify: false

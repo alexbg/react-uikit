@@ -16,5 +16,7 @@ module.exports = {
   list: require('./dist/core/elements/uiList'),
   descriptionList: require('./dist/core/elements/uiDescriptionList'),
   table: require('./dist/core/elements/table/indexTable'),
-  form: require('./dist/core/elements/form/indexForm')
+  form: require('./dist/core/elements/form/indexForm'),
+  // Layout
+  panel: require('./dist/core/layout/uiPanel')
 }

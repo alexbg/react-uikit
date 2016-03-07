@@ -15,8 +15,12 @@ var test = require('reactuikit');
   </test.descriptionList>,document.getElementById('test'));*/
 
   ReactDOM.render(
-    <test.form.form id='yeah' modifiers='stacked'>
-      <test.form.input name='patata' type='text' label='cuetara' ></test.form.input>
-      <test.form.input name='patata2' type='checkbox' label='juas'></test.form.input>
-    </test.form.form>,document.getElementById('test')
+    <test.panel
+      title='prueba'
+      badge={<test.badge color='success'>Yeah</test.badge>}
+      teaser='http://getuikit.com/docs/images/placeholder_600x400_2.svg'
+      icon={<test.icon />}
+      header>
+      Este es el panel
+    </test.panel>,document.getElementById('test')
   );
