@@ -1,6 +1,6 @@
 {
   "name": "reactuikit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Use react with the css framework uikit",
   "main": "index.js",
   "repository": {
