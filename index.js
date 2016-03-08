@@ -12,12 +12,15 @@ module.exports = {
   text: require('./dist/core/common/uiText'),
   column: require('./dist/core/common/uiColumn'),
   animation: require('./dist/core/common/uiAnimation'),
+
   // Elements
   list: require('./dist/core/elements/uiList'),
   descriptionList: require('./dist/core/elements/uiDescriptionList'),
   table: require('./dist/core/elements/table/indexTable'),
   form: require('./dist/core/elements/form/indexForm'),
+  
   // Layout
   panel: require('./dist/core/layout/uiPanel'),
-  block: require('./dist/core/layout/uiBlock')
+  block: require('./dist/core/layout/uiBlock'),
+  article: require('./dist/core/layout/uiArticle')
 }

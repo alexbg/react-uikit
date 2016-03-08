@@ -28,6 +28,12 @@ possible while using all the feature that uikit has.
 - [description list](http://getuikit.com/docs/description-list.html)
 - [list](http://getuikit.com/docs/list.html)
 
+### layout
+
+- [panel](http://getuikit.com/docs/panel.html)
+- [block](http://getuikit.com/docs/block.html)
+- [article](http://getuikit.com/docs/article.html)
+
 ## How to install?
 
 `npm install reactuikit`
