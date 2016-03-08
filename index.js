@@ -17,10 +17,15 @@ module.exports = {
   list: require('./dist/core/elements/uiList'),
   descriptionList: require('./dist/core/elements/uiDescriptionList'),
   table: require('./dist/core/elements/table/indexTable'),
+  // is not working at all yet
   form: require('./dist/core/elements/form/indexForm'),
-  
+
   // Layout
+  // has some problems with hover along primary or secondary
   panel: require('./dist/core/layout/uiPanel'),
   block: require('./dist/core/layout/uiBlock'),
-  article: require('./dist/core/layout/uiArticle')
+  article: require('./dist/core/layout/uiArticle'),
+  // It is only the comment, you can not make a comment list by this
+  // you can not make a subnav on comment at this moment.
+  comment: require('./dist/core/layout/uiComment')
 }

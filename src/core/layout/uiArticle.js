@@ -1,6 +1,6 @@
 var React = require('react');
 
-var uiList = React.createClass({
+var uiArticle = React.createClass({
   propTypes: {
     title: React.PropTypes.string,
     meta: React.PropTypes.string,
@@ -29,15 +29,15 @@ var uiList = React.createClass({
     filledClassName = filledClassName.join(' ');
 
     return (
-      <div className={filledClassName} {...options}>
+      <article className={filledClassName} {...options}>
         {title ? <h1 className='uk-article-title'>{title}</h1> : null}
         {meta ? <div className='uk-article-meta'>{meta}</div> : null}
         {lead ? <div className='uk-article-lead'>{lead}</div> : null}
         {props.children}
         {divider ? <hr className='uk-article-divider'></hr> : null}
-      </div>
+      </article>
     )
   }
 });
 
-module.exports = uiList;
+module.exports = uiArticle;

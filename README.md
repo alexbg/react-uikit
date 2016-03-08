@@ -33,6 +33,7 @@ possible while using all the feature that uikit has.
 - [panel](http://getuikit.com/docs/panel.html)
 - [block](http://getuikit.com/docs/block.html)
 - [article](http://getuikit.com/docs/article.html)
+- [comment](http://getuikit.com/docs/comment.html)
 
 ## How to install?
 
