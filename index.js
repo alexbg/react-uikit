@@ -18,5 +18,6 @@ module.exports = {
   table: require('./dist/core/elements/table/indexTable'),
   form: require('./dist/core/elements/form/indexForm'),
   // Layout
-  panel: require('./dist/core/layout/uiPanel')
+  panel: require('./dist/core/layout/uiPanel'),
+  block: require('./dist/core/layout/uiBlock')
 }
