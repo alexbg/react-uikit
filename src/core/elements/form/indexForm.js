@@ -1,4 +1,5 @@
 module.exports = {
   form: require('./uiForm'),
-  input: require('./uiFormInput')
+  input: require('./uiFormInput'),
+  groupInput: require('./uiFormInputGroup')
 }

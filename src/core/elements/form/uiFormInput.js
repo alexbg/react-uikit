@@ -10,11 +10,13 @@ var uiFormInput = React.createClass({
       React.PropTypes.number
     ]),
     blank: React.PropTypes.bool,
-    help: React.PropTypes.oneOf(['line','block']),
+    help: React.PropTypes.shape({
+      type: React.PropTypes.oneOf(['inline','block']),
+      text: React.PropTypes.string
+    }),
     type: React.PropTypes.string,
     icon: React.PropTypes.string,
-    label: React.PropTypes.string,
-    control: React.PropTypes.bool
+    label: React.PropTypes.string
   },
   getDefaultProps: function(){
     return {
@@ -22,8 +24,9 @@ var uiFormInput = React.createClass({
     }
   },
   render: function(){
+    console.log('yeahhh');
     var props = this.props;
-
+    console.log(props);
     var filledClassName = [];
 
     var {
@@ -37,7 +40,7 @@ var uiFormInput = React.createClass({
       type,
       icon,
       label,
-      control,
+      help,
       ...options} = props;
 
     filledClassName.push('');
@@ -67,47 +70,35 @@ var uiFormInput = React.createClass({
     }
 
     filledClassName = filledClassName.join(' ');
-
-    var controlClassName = [];
-    controlClassName.push('uk-form-controls');
-
-    if(type == 'checkbox' || type == 'radio'){
-      controlClassName.push('uk-form-controls-text');
-    }
-
-    controlClassName = controlClassName.join(' ');
-
-    
+    console.log(filledClassName);
     var input;
     var inputElement = <input className={filledClassName} {...options} type={type}></input>
-    if(row || control){
-      if(control){
-        input = (
-          <div className='uk-form-row'>
-            {label ? <label className='uk-form-label'>{label}</label> : null}
-            <div className={controlClassName}>
-              {inputElement}
-              {type == 'checkbox' || type == 'radio' ? <label>{label}</label> : null}
-            </div>
-          </div>
-        );
+    var help;
+    if(help){
+      if(help.type == 'inline'){
+        help = <span className='uk-form-help-inline'>{help.text}</span>
       }else{
-        input = (
-          <div className='uk-form-row'>
-            {label ? <label>{label}</label> : null}
-            {inputElement}
-          </div>
-        );
+        help = <p className='uk-form-help-block'>{help.text}</p>
       }
+    }
+    if(row || help){
+      input = (
+        <div className='uk-form-row'>
+          {label ? <label className='uk-form-label'>{label}</label> : null}
+          {inputElement}
+          {help}
+        </div>
+      );
     }else{
       if(label){
         input = (
           <label>{inputElement}{label}</label>
         );
       }else{
-        input = {inputElement}
+        input = inputElement;
       }
     }
+    console.log(input);
     return input;
   }
 });

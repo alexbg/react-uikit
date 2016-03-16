@@ -47,22 +47,22 @@ var uiForm = React.createClass({
       options['data-uk-margin'] = true;
     }
 
-    var finalChildrens = [];
+    //var finalChildrens = [];
 
-    if(modifiers){
+    /*if(modifiers){
       React.Children.map(props.children,function(e,index){
         finalChildrens.push(<e.type {...e.props} control key={'input-'+index}></e.type>);
       });
     }else{
       finalChildrens = props.children;
-    }
-    
+    }*/
+
 
     return (
       <form className={filledClassName} {...options}>
         <fieldset>
           {legend ? <legend>legend</legend> : null}
-          {finalChildrens}
+          {props.children}
         </fieldset>
       </form>
     );
