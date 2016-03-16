@@ -27,5 +27,8 @@ module.exports = {
   article: require('./dist/core/layout/uiArticle'),
   // It is only the comment, you can not make a comment list by this
   // you can not make a subnav on comment at this moment.
-  comment: require('./dist/core/layout/uiComment')
+  comment: require('./dist/core/layout/uiComment'),
+
+  //navigation
+  nav: require('./dist/core/navigations/nav/indexNav')
 }

@@ -24,7 +24,7 @@ var transform = function(){
   .transform(babelify)
   .require("./bundle-test.js", { entry: true })
   .bundle()
-  .on("error", function (err) { /*console.log("Error: " + err.message);*/ gutil.log('There is a error in transorm')})
+  .on("error", function (err) { console.log("Error: " + err.message); gutil.log('There is a error in transorm')})
   .pipe(fs.createWriteStream("./bundle/bundle.js"));
   gutil.log(gutil.colors.magenta('Transform is finished'));
 }
