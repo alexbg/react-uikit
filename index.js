@@ -30,5 +30,6 @@ module.exports = {
   comment: require('./dist/core/layout/uiComment'),
 
   //navigation
-  nav: require('./dist/core/navigations/nav/indexNav')
+  nav: require('./dist/core/navigations/nav/indexNav'),
+  breadcrumb: require('./dist/core/navigations/breadcrumb/indexBreadCrumb')
 }
