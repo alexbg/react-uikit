@@ -29,6 +29,7 @@ possible while using all the feature that uikit has.
 - [table](http://getuikit.com/docs/table.html)
 - [description list](http://getuikit.com/docs/description-list.html)
 - [list](http://getuikit.com/docs/list.html)
+- [form](http://getuikit.com/docs/form.html)
 
 ### layout
 
@@ -36,6 +37,11 @@ possible while using all the feature that uikit has.
 - [block](http://getuikit.com/docs/block.html)
 - [article](http://getuikit.com/docs/article.html)
 - [comment](http://getuikit.com/docs/comment.html)
+
+### navigation
+
+- [breadcrumb](http://getuikit.com/docs/breadcrumb.html)
+- [nav](http://getuikit.com/docs/nav.html)
 
 ## How to install?
 

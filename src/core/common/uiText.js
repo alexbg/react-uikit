@@ -10,7 +10,7 @@ var uiText = React.createClass({
   },
   getDefaultProps: function(){
     return {
-      styles: ['primary','bold']
+      
     }
   },
   render: function(){
