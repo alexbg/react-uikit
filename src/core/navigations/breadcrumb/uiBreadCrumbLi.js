@@ -32,7 +32,7 @@ var uiBreadCrumb = React.createClass({
     var childrens = [];
     React.Children.map(props.children,function(e,index){
       if(typeof e == 'string'){
-        console.log('ES UN STRING');
+        //console.log('ES UN STRING');
         childrens.push(<span key={'breadcrumb-'+index}>{e}</span>);
       }else{
         childrens.push(e);

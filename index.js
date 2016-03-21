@@ -17,7 +17,7 @@ module.exports = {
   list: require('./dist/core/elements/uiList'),
   descriptionList: require('./dist/core/elements/uiDescriptionList'),
   table: require('./dist/core/elements/table/indexTable'),
-  // is not working at all yet
+
   form: require('./dist/core/elements/form/indexForm'),
 
   // Layout
@@ -31,5 +31,7 @@ module.exports = {
 
   //navigation
   nav: require('./dist/core/navigations/nav/indexNav'),
-  breadcrumb: require('./dist/core/navigations/breadcrumb/indexBreadCrumb')
+  breadcrumb: require('./dist/core/navigations/breadcrumb/indexBreadCrumb'),
+  //pagination not working at all
+  pagination: require('./dist/core/navigations/pagination/indexPagination')
 }
