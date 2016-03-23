@@ -33,5 +33,6 @@ module.exports = {
   nav: require('./dist/core/navigations/nav/indexNav'),
   breadcrumb: require('./dist/core/navigations/breadcrumb/indexBreadCrumb'),
   //pagination not working at all
-  pagination: require('./dist/core/navigations/pagination/indexPagination')
+  pagination: require('./dist/core/navigations/pagination/indexPagination'),
+  tab: require('./dist/core/navigations/tab/indexTab')
 }
