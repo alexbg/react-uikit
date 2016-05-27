@@ -34,5 +34,9 @@ module.exports = {
   breadcrumb: require('./dist/core/navigations/breadcrumb/indexBreadCrumb'),
   //pagination not working at all
   pagination: require('./dist/core/navigations/pagination/indexPagination'),
-  tab: require('./dist/core/navigations/tab/indexTab')
+  tab: require('./dist/core/navigations/tab/indexTab'),
+
+  //Javascript
+  modal: require('./dist/core/javascript/modal/indexModal')
+
 }

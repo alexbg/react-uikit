@@ -14,7 +14,7 @@ var test = require('reactuikit');
     <dd>Esta es la description</dd>
   </test.descriptionList>,document.getElementById('test'));*/
 
-  ReactDOM.render(
+  /*ReactDOM.render(
     <test.panel
       title='prueba'
       badge={<test.badge color='success'>Yeah</test.badge>}
@@ -23,4 +23,16 @@ var test = require('reactuikit');
       header>
       Este es el panel
     </test.panel>,document.getElementById('test')
+  );*/
+
+  ReactDOM.render(
+    <test.modal.modal id='prueba'>
+      <test.button
+       color='primary'
+       size='large'
+       toggle>
+         I am a button
+      </test.button>,
+      Este es el panel
+    </test.modal.modal>,document.getElementById('test')
   );
