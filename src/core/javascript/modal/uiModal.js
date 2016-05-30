@@ -1,21 +1,13 @@
 var React = require('react');
 
-var uiButton = React.createClass({
+var uiModal = React.createClass({
   propTypes: {
-    id: React.PropTypes.string,
-    close: React.PropTypes.bool,
-    large: React.PropTypes.bool,
-    button: React.PropTypes.bool,
-    //text: React.PropTypes.string.isRequired,
-    lightbox: React.PropTypes.string,
-    spinner: React.PropTypes.bool,
-    center: React.PropTypes.bool,
-    closeOverlay: React.PropTypes.bool
-    //link: React.PropTypes.bool
+    id: React.PropTypes.string.isRequired
+
   },
   getDefaultProps: function(){
     return {
-      id: 'my-id'
+      id: '#my-id'
     }
   },
   render: function(){
@@ -25,16 +17,12 @@ var uiButton = React.createClass({
 
     var {id, ...options} = props;
 
-    React.Children.map(props.children,function(e,index){
-      console.log(e);
-    });
-
     return (
-      <div className='uk-modal' id={id}>
+      <div className='uk-modal' id={id} {...options}>
         {this.props.children}
       </div>
     )
   }
 });
 
-module.exports = uiButton;
+module.exports = uiModal;

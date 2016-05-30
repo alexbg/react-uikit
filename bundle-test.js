@@ -26,13 +26,32 @@ var test = require('reactuikit');
   );*/
 
   ReactDOM.render(
-    <test.modal.modal id='prueba'>
+    <div>
       <test.button
        color='primary'
        size='large'
-       toggle>
+       id='weee'
+       modal='prueba'
+       centerModal>
          I am a button
-      </test.button>,
-      Este es el panel
-    </test.modal.modal>,document.getElementById('test')
+      </test.button>
+      <test.modal.modal id='prueba'>
+        <test.modal.dialog caption='Prueba caption' large>
+          <test.modal.modalHeader>
+            Este es el headerrr weeee
+          </test.modal.modalHeader>
+            Este es el restoooo
+          <test.modal.modalFooter>
+            Este es el footer
+          </test.modal.modalFooter>
+        </test.modal.dialog>
+      </test.modal.modal>
+      <test.button
+       color='primary'
+       size='large'
+       id='weee'
+       onClick={function(){console.log('weeeee')}}>
+         I am a weee button
+      </test.button>
+    </div>,document.getElementById('test')
   );

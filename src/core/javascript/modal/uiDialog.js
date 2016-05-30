@@ -1,27 +1,19 @@
 var React = require('react');
 
-var uiButton = React.createClass({
+var uiDialog = React.createClass({
   propTypes: {
-    color: React.PropTypes.string,
-    size: React.PropTypes.string,
-    toggle: React.PropTypes.bool,
-    className: React.PropTypes.string,
-    //text: React.PropTypes.string.isRequired,
-    disabled: React.PropTypes.bool,
-    full: React.PropTypes.bool,
-    margin: React.PropTypes.bool,
-    //link: React.PropTypes.bool
+    caption: React.PropTypes.string,
+    lightbox: React.PropTypes.bool,
+    blank: React.PropTypes.bool,
+    spinner: React.PropTypes.bool,
+    large: React.PropTypes.bool,
+    close: React.PropTypes.bool
+
   },
   getDefaultProps: function(){
     return {
-      color: 'primary',
-      size: 'large',
-      toggle: false,
-      //text: 'button',
-      disabled: false,
-      full: false,
-      margin: true,
-      //link: false
+      large: false,
+      close: true
     }
   },
   render: function(){
@@ -29,49 +21,54 @@ var uiButton = React.createClass({
 
     var filledClassName = [];
 
-    var {color,size,full,toggle,className,margin, ...options} = props;
+    var {caption,lightbox,blank,large,spinner, ...options} = props;
 
 
-    filledClassName.push('uk-button');
+    filledClassName.push('uk-modal-dialog');
 
-    // color of button (primary,danger,success,link)
-    if(color){
-      filledClassName.push('uk-button-'+color);
+
+    if(large){
+      filledClassName.push('uk-modal-dialog-large');
     }
 
-    if(size){
-      filledClassName.push('uk-button-'+size);
+    if(lightbox){
+      filledClassName.push('uk-modal-dialog-lightbox');
     }
 
-    if(full){
-      filledClassName.push('uk-width-1-1');
+    if(blank){
+      filledClassName.push('uk-modal-dialog-blank');
     }
 
-    if(className){
-      filledClassName.push(className);
+    if(spinner){
+      spinner = <div className='uk-modal-spinner'></div>
     }
+
 
     filledClassName = filledClassName.join(' ');
 
-    // rest of parameters
 
-    if(toggle){
+    if(caption){
+      caption = <div className='uk-modal-caption'>caption</div>
+    }
+
+    if(close){
+      close = <a className="uk-modal-close uk-close"></a>
+    }
+
+    if(large){
       options['data-uk-button'] = true;
     }
 
-    if(margin){
-      options['data-uk-margin'] = true;
-    }
 
-    // if is a <button> or <a> tag
-    var button;
-    if(props.href){
-      button = <a className={filledClassName} {...options}>{props.children}</a>
-    }else{
-      button = <button className={filledClassName} {...options}>{props.children}</button>
-    }
-    return button;
+    return (
+      <div className={filledClassName} {...options}>
+        {close}
+        {spinner}
+        {props.children}
+        {caption}
+      </div>
+    )
   }
 });
 
-module.exports = uiButton;
+module.exports = uiDialog;

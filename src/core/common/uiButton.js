@@ -10,6 +10,9 @@ var uiButton = React.createClass({
     disabled: React.PropTypes.bool,
     full: React.PropTypes.bool,
     margin: React.PropTypes.bool,
+    modal: React.PropTypes.string,
+    centerModal: React.PropTypes.bool,
+    bgclose: React.PropTypes.bool
     //link: React.PropTypes.bool
   },
   getDefaultProps: function(){
@@ -21,6 +24,8 @@ var uiButton = React.createClass({
       disabled: false,
       full: false,
       margin: true,
+      centerModal: false,
+      bgclose: false
       //link: false
     }
   },
@@ -29,7 +34,7 @@ var uiButton = React.createClass({
 
     var filledClassName = [];
 
-    var {color,size,full,toggle,className,margin, ...options} = props;
+    var {color,size,full,toggle,className,margin,modal,centerModal,bgclose, ...options} = props;
 
 
     filledClassName.push('uk-button');
@@ -61,6 +66,10 @@ var uiButton = React.createClass({
 
     if(margin){
       options['data-uk-margin'] = true;
+    }
+
+    if(modal){
+      options['data-uk-modal'] = "{target: '#"+modal+"', center: "+centerModal+", bgclose: "+bgclose+"}";
     }
 
     // if is a <button> or <a> tag
