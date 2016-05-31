@@ -35,6 +35,7 @@ module.exports = {
   //pagination not working at all
   pagination: require('./dist/core/navigations/pagination/indexPagination'),
   tab: require('./dist/core/navigations/tab/indexTab'),
+  thumbnav: require('./dist/core/navigations/uiThumbnav'),
 
   //Javascript
   modal: require('./dist/core/javascript/modal/indexModal'),

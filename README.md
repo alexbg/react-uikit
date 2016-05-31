@@ -42,6 +42,13 @@ possible while using all the feature that uikit has.
 
 - [breadcrumb](http://getuikit.com/docs/breadcrumb.html)
 - [nav](http://getuikit.com/docs/nav.html)
+- [pagination](http://getuikit.com/docs/nav.html)
+- [tab](http://getuikit.com/docs/tab.html)
+- [thumbnav](http://getuikit.com/docs/thumbnav.html)
+
+### javascript
+- [modal](http://getuikit.com/docs/modal.html)
+- [off-canvas](http://getuikit.com/docs/offcanvas.html)
 
 ## How to install?
 

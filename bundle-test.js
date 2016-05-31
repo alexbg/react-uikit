@@ -27,9 +27,9 @@ var test = require('reactuikit');
 
 
   ReactDOM.render(
-    <test.list striped>
-      <li>hello</li>
-      <li>Hi</li>
-      <li>sayounara</li>
-    </test.list>,document.getElementById('test')
+    <test.thumbnav grid='1-2'>
+      <li><a href=''><img src='http://getuikit.com/docs/images/placeholder_200x100.svg'></img></a></li>
+      <li><a href=''><img src='http://getuikit.com/docs/images/placeholder_200x100.svg'></img></a></li>
+      <li><a href=''><img src='http://getuikit.com/docs/images/placeholder_200x100.svg'></img></a></li>
+    </test.thumbnav>,document.getElementById('test')
   );
