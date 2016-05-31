@@ -25,7 +25,7 @@ var test = require('reactuikit');
     </test.panel>,document.getElementById('test')
   );*/
 
-  ReactDOM.render(
+  /*ReactDOM.render(
     <div>
       <test.button
        color='primary'
@@ -53,5 +53,14 @@ var test = require('reactuikit');
        onClick={function(){console.log('weeeee')}}>
          I am a weee button
       </test.button>
+    </div>,document.getElementById('test')
+  );*/
+
+  ReactDOM.render(
+    <div>
+    <test.button offcanvas='prueba'>Poner offcanvas</test.button>
+    <test.offCanvas id='prueba'>
+      Funcionando weee el off canvas
+    </test.offCanvas>
     </div>,document.getElementById('test')
   );

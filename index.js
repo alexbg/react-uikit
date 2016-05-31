@@ -37,6 +37,7 @@ module.exports = {
   tab: require('./dist/core/navigations/tab/indexTab'),
 
   //Javascript
-  modal: require('./dist/core/javascript/modal/indexModal')
+  modal: require('./dist/core/javascript/modal/indexModal'),
+  offCanvas: require('./dist/core/javascript/offCanvas')
 
 }
