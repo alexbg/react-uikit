@@ -23,6 +23,7 @@ possible while using all the feature that uikit has.
 - [thumbnail](http://getuikit.com/docs/thumbnail.html)
 - [animation](http://getuikit.com/docs/animation.html)
 - [alert](http://getuikit.com/docs/alert.html)
+- [contrast](http://getuikit.com/docs/contrast.html)
 
 ### elements
 
