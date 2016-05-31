@@ -25,42 +25,11 @@ var test = require('reactuikit');
     </test.panel>,document.getElementById('test')
   );*/
 
-  /*ReactDOM.render(
-    <div>
-      <test.button
-       color='primary'
-       size='large'
-       id='weee'
-       modal='prueba'
-       centerModal>
-         I am a button
-      </test.button>
-      <test.modal.modal id='prueba'>
-        <test.modal.dialog caption='Prueba caption' large>
-          <test.modal.modalHeader>
-            Este es el headerrr weeee
-          </test.modal.modalHeader>
-            Este es el restoooo
-          <test.modal.modalFooter>
-            Este es el footer
-          </test.modal.modalFooter>
-        </test.modal.dialog>
-      </test.modal.modal>
-      <test.button
-       color='primary'
-       size='large'
-       id='weee'
-       onClick={function(){console.log('weeeee')}}>
-         I am a weee button
-      </test.button>
-    </div>,document.getElementById('test')
-  );*/
 
   ReactDOM.render(
-    <div>
-    <test.button offcanvas='prueba'>Poner offcanvas</test.button>
-    <test.offCanvas id='prueba'>
-      Funcionando weee el off canvas
-    </test.offCanvas>
-    </div>,document.getElementById('test')
+    <test.list striped>
+      <li>hello</li>
+      <li>Hi</li>
+      <li>sayounara</li>
+    </test.list>,document.getElementById('test')
   );

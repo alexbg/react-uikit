@@ -2,7 +2,9 @@ var React = require('react');
 
 var uiList = React.createClass({
   propTypes: {
-    modifier: React.PropTypes.oneOf(['line','striped','space'])
+    line: React.PropTypes.bool,
+    striped: React.PropTypes.bool,
+    space: React.PropTypes.bool
   },
   getDefaultProps: function(){
     return {
@@ -14,12 +16,20 @@ var uiList = React.createClass({
 
     var filledClassName = [];
 
-    var {className,modifier,...options} = props;
+    var {className,line,striped,space, ...options} = props;
 
     filledClassName.push('uk-list');
 
-    if(modifier){
-      filledClassName.push('uk-list-'+modifier);
+    if(line){
+      filledClassName.push('uk-list-line');
+    }
+
+    if(striped){
+      filledClassName.push('uk-list-striped');
+    }
+
+    if(space){
+      filledClassName.push('uk-list-space');
     }
 
     if(className){
