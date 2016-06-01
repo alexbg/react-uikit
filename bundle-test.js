@@ -27,10 +27,9 @@ var test = require('reactuikit');
 
 
   ReactDOM.render(
-    <test.contrast>
-    <test.thumbnav grid='1-2'>
-      <li><a href=''><img src='http://getuikit.com/docs/images/placeholder_200x100.svg'></img></a></li>
-      <li><a href=''><img src='http://getuikit.com/docs/images/placeholder_200x100.svg'></img></a></li>
-      <li><a href=''><img src='http://getuikit.com/docs/images/placeholder_200x100.svg'></img></a></li>
-    </test.thumbnav></test.contrast>,document.getElementById('test')
+    <test.cover.cover
+      background='http://getuikit.com/docs/images/placeholder_600x400.svg'
+      height={500}
+      responsive>
+    </test.cover.cover>,document.getElementById('test')
   );

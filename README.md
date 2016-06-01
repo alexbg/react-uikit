@@ -7,7 +7,7 @@ With react-uikit you can use the css framework uikit with react.
 The main objective of react-uikit is: to use uikit with react writing the less code
 possible while using all the feature that uikit has.
 
-**The documentation is [here](http://alexbg.github.io/react-uikit-doc/)**
+**The documentation is [here](https://alexbg.gitbooks.io/react-uikit-doc/content/)**
 
 ## What can you do?
 
